@@ -70,7 +70,7 @@ function judge(data) {
 function search() {
     bot.get('search/tweets',
         {
-            q: '"なんでもします" OR "なんでもする" OR "何でもする" OR "何でもします" OR "何でもやる" OR "なんでもやる" -from:@' + BOT_NAME,
+            q: '"なんでもします" OR "なんでもする" OR "何でもする" OR "何でもします" OR "何でもやる" OR "なんでもやる" -? -？ -from:@' + BOT_NAME,
             result_type: 'recent',
             count: 100
         }, function (err, data, response) {
