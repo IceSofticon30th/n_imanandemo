@@ -80,4 +80,4 @@ function search() {
 
 setNextUpdate();
 search();
-setInterval(search, 1000 * 60 * 15);
+setInterval(search, 1000 * 60 * 30);
