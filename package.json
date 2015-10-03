@@ -1,0 +1,22 @@
+{
+  "name": "n_imanandemo",
+  "version": "1.0.0",
+  "description": "ん？今なんでもするって言ったよね",
+  "main": "nandemo.js",
+  "scripts": {
+    "test": "node nandemo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IceSofticon30th/n_imanandemo"
+  },
+  "author": "@IceSofticon30th",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IceSofticon30th/n_imanandemo/issues"
+  },
+  "homepage": "https://github.com/IceSofticon30th/n_imanandemo",
+  "dependencies": {
+    "twit": "^2.1.0"
+  }
+}
