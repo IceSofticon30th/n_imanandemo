@@ -36,7 +36,7 @@ function reply(tweet) {
     console.log(tweet.user.name + '(' + tweet.user.screen_name + '): ' + tweet.text);
     bot.post('statuses/update',
         {
-            'status': '@' + tweet.user.screen_name + NANDEMO[Math.floor(Math.random() * NANDEMO.length)],
+            'status': '@' + tweet.user.screen_name + ' ' + NANDEMO[Math.floor(Math.random() * NANDEMO.length)],
             'in_reply_to_status_id': tweet.id_str
         },
         function(err, data, response) {
