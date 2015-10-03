@@ -1,5 +1,5 @@
 var Twit = require('twit');
-var KEYS = require('./keys');
+var KEYS = require('./keys.json');
 
 var BOT_NAME = 'n_imanandemo';
 
