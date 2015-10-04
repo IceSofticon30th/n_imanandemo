@@ -13,7 +13,7 @@ ACCOUNTS.forEach(function (ACCOUNT) {
 
 var excludeBots = '';
 ACCOUNTS.forEach(function (ACCOUNT) {
-    excludeBots += ' -from: @' + ACCOUNT.screen_name ;
+    excludeBots += ' -from:@' + ACCOUNT.screen_name ;
 });
 
 var botIndex = null;
