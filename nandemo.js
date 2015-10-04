@@ -99,4 +99,4 @@ function nextBotIndex() {
 }
 
 nextBotIndex();
-setInterval(nextBotIndex, 1000 * 60 * 30 / bots.length);
+setInterval(nextBotIndex, 1000 * 60 * 40 / bots.length);
