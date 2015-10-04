@@ -98,4 +98,4 @@ function nextBotIndex() {
     search();
 }
 
-setInterval(nextBotIndex, 1000 * 60 * 40 / bots.length);
+setInterval(nextBotIndex, 1000 * 60 * 60 / bots.length);
