@@ -98,5 +98,4 @@ function nextBotIndex() {
     search();
 }
 
-nextBotIndex();
 setInterval(nextBotIndex, 1000 * 60 * 40 / bots.length);
