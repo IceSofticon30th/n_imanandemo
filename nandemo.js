@@ -11,11 +11,6 @@ ACCOUNTS.forEach(function (ACCOUNT) {
     }));
 });
 
-var excludeBots = '';
-ACCOUNTS.forEach(function (ACCOUNT) {
-    excludeBots += ' -from:@' + ACCOUNT.screen_name ;
-});
-
 var botIndex = null;
 
 // 同じツイートばっかりしてるとスパム検知されるかと思って微妙に違うパターンを作っておく(効果があるとは言っていない)
@@ -76,9 +71,10 @@ function judge(data) {
 function search() {
     var bot = bots[botIndex];
     
+    // クエリでクエスチョンマークを除外しておくことで必然的に自分のBotたちのツイートは取得されない
     bot.get('search/tweets',
         {
-            q: '"なんでもします" OR "なんでもする" OR "何でもする" OR "何でもします" OR "何でもやる" OR "なんでもやる" -? -？ exclude:retweets' + excludeBots,
+            q: '"なんでもします" OR "なんでもする" OR "何でもする" OR "何でもします" OR "何でもやる" OR "なんでもやる" -? -？ exclude:retweets',
             result_type: 'recent',
             count: 100
         }, function (err, data, response) {
